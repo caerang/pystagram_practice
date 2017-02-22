@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'photos.apps.PhotosConfig',
+    'profiles.apps.ProfilesConfig',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,5 @@ STATICFILES_DIRS = (
 MEDIA_URL = '/upload_files/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
+
+LOGIN_REDIRECT_URL = '/photos/upload'
